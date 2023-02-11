@@ -1,0 +1,5 @@
+@import url("./variables.css");
+
+.home{
+    background-color: var(--primary);
+}
