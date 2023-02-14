@@ -1,5 +1,6 @@
 @import url("./variables.css");
 
+/* HOME PAGE STYLES*/
 .home{
     background-color: var(--primary);
 }
