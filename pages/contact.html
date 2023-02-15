@@ -5,24 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muturu Breed -- Cattle</title>
+    <link rel="shortcut icon" href="../media/favcon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <main class="contact">
+    <header>
+        <div>
+            <img src="" alt="logo">
+        </div>
         <nav>
-            <div>
-                <img src="" alt="logo">
-            </div>
-
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
+            <ul class="nav__item__cont">
+                <li class="nav__item"><a href="./index.html">Home</a></li>
+                <li class="nav__item"><a href="./about.html">About Us</a></li>
+                <li class="nav__item"><a href="./gallery.html">Gallery</a></li>
+                <li class="nav__item"><a href="./blog.html">Blog</a></li>
+                <li class="nav__item contact"><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
+    </header>
+    <main id="contact" class="contact">
+        <section class="hero">
+            <img src="" alt="contact us img">
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>
+                Feel free to talk to us if you have any question.
+                Just fill the form and we will get in touch with you shortly.
+            </p>
+            <form>
+                <div>
+                    <div>
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" name="Name">
+                    </div>
+                    <div>
+                        <label for="mail">EMAIL</label>
+                        <input type="email" id="mail" name="email">
+                    </div>
+                    <div>
+                        <label for="phNum">PHONE NUMBER</label>
+                        <input type="tel" id="phNum" name="Phone Number">
+                    </div>
+                </div>
+                <div>
+                    <label for="msg">SEND US A MESSAGE</label>
+                    <textarea name="message" id="msg" cols="30" rows="10" placeholder="Write something"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>
+    <footer>
+        <div></div>
+        <div>
+            <ul>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Contact Us</p>
+            <p>
+                <i></i>
+                <span>murabreed@yahoo.uk.org</span>
+            </p>
+            <p>
+                <i></i>
+                <span>01453687937, +2336704535170</span>
+            </p>
+        </div>
+    </footer>
 
     <script src="../script/index.js"></script>
 </body>
