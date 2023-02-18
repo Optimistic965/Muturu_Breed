@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,800;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,800;1,300;1,400;1,500;1,700&display=swap');
 
 *, *::after, *::before{
     margin: 0;
@@ -10,11 +10,14 @@
 :root{
             /* COLOR PALETTE*/
     --primary: rgba(77, 245, 84, 0.2);
-    --light-primary: rgba(77, 245, 82, 0.102);
+    --light-primary: rgba(77, 245, 82, 0.2);
     --secondary: rgb(0, 82, 72);
     --txt-color: rgb(30, 30, 30);
     --gray: rgba(215, 215, 215, 1);
     --light-gray: rgba(62, 62, 62, 0.8);
+    --bg-color: rgba(218, 243, 219, 1);
+
+
 
             /* FONT SIZES*/
     --ft-sm: 20px;

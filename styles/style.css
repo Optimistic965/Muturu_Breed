@@ -8,12 +8,14 @@ header, footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--txt-color);
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 header div{
     width: 10%;
     height: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 header div img{
@@ -74,6 +76,138 @@ header .nav__item.contact a{
 /* FOOTER STYLE */
 
 /* HOME PAGE STYLES*/
-.home{
+.hero .main__cont{
     font-size: 300;
+    width: 100%;
+    height: 90vh;
+    background: url("../media/mainHeroBg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-block: 15vh;
+}
+
+.main__cont::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: var(--light-gray); */
+}
+
+.main__cont div{
+    width: 50%;
+    height: 60vh;
+    margin-inline: auto;
+    background-color: var(--light-primary);
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding: 2em;
+    border-radius: 8px;
+}
+
+.main__cont div h1{
+    font-weight: 700;
+    font-size: var(--ft-md);
+}
+
+.main__cont div h2{
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.main__cont div p{
+    font-weight: 600;
+    font-size: var(--ft-md);
+}
+
+.main__cont div button{
+    width: 250px;
+    height: 60px;
+    margin-top: 3em;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logo__cont{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--bg-color);
+}
+
+.logo__cont .logo__wrap{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ABOUT SECTION IN HOME PAGE*/
+
+.home .about{
+    width: 100%;
+    height: 100vh;
+    margin-block: 8vh;
+    background-color: var(--bg-color);
+    padding: 5em;
+}
+
+.about h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
+.about > div{
+    display: flex;
+}
+
+.about .text__wrap{
+    padding-inline: 1em;
+    width: 65%;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.about .text__wrap p{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.about .text__wrap button{
+    width: 250px;
+    height: 60px;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 82, 72, 1);
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+.about .img__wrap{
+    padding-top: 1.5em;
+    /* background-color: red; */
+    position: relative;
+}
+
+.img__wrap .moveable{
+    position: absolute;
+    z-index: 100;
+    top: 15em;
+    left: -1.6em;
 }
