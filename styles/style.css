@@ -88,19 +88,19 @@ header .nav__item.contact a{
     padding-block: 15vh;
 }
 
-.main__cont::after{
+/* .main__cont::after{
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    /* background-color: var(--light-gray); */
-}
+    background-color: var(--light-gray);
+} */
 
 .main__cont div{
     width: 50%;
-    height: 60vh;
+    height: auto;
     margin-inline: auto;
     background-color: var(--light-primary);
     text-align: center;
@@ -137,6 +137,12 @@ header .nav__item.contact a{
     cursor: pointer;
 }
 
+.main__cont div button:hover{
+    background-color: var(--secondary);
+    color: aliceblue;
+    border-color: var(--secondary);
+}
+
 .logo__cont{
     width: 100%;
     height: 10vh;
@@ -156,7 +162,7 @@ header .nav__item.contact a{
 
 .home .about{
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin-block: 8vh;
     background-color: var(--bg-color);
     padding: 5em;
@@ -186,7 +192,7 @@ header .nav__item.contact a{
     margin-bottom: 2em;
 }
 
-.about .text__wrap button{
+.about .text__wrap button, .gallery button{
     width: 250px;
     height: 60px;
     background: transparent;
@@ -197,6 +203,7 @@ header .nav__item.contact a{
     font-weight: 700;
     cursor: pointer;
     margin-left: 10%;
+    margin-bottom: 2em;
 }
 
 .about .img__wrap{
@@ -210,4 +217,112 @@ header .nav__item.contact a{
     z-index: 100;
     top: 15em;
     left: -1.6em;
+}
+
+.home .gallery, .home .project{
+    width: 100%;
+    height: auto;
+}
+
+.gallery h2, .project h2{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.grid__cont{
+    display: grid;
+    grid-template-columns: repeat(30%, 3);
+    grid-template-rows: 400px;
+    gap: 5%;
+    padding: 4em;
+}
+
+.grid__item{
+    text-align: center;
+}
+
+.grid__item h4{
+    margin-top: .5em;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.item__1{
+    grid-column: 1 / 2;
+}
+
+.item__2{
+    grid-column: 2 / 3;
+}
+
+.item__3{
+    grid-column: 3 / 4;
+}
+
+.gallery button{
+    margin: 2em 42%;
+}
+
+.about .text__wrap button:hover, .gallery button:hover{
+    background-color: var(--secondary);
+    color: aliceblue;
+}
+
+.home .team{
+    margin-block: 5em;
+    height: 50vh;
+}
+
+.team h2{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.team .flex__cont{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.team .flex__cont h4{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.team .flex__cont h6{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.contact{
+    text-align: center;
+    width: 90%;
+    max-height: 50vh;
+    margin: 5em auto;
+    background-color: var(--primary);
+}
+
+.contact h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.contact > div{
+    display: flex;
+    justify-content: space-evenly;
 }
