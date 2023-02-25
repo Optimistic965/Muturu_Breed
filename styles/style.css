@@ -29,7 +29,7 @@ nav{
     display: flex;
     align-items: center;
     padding-inline: 1em;
-    font-family: 'Montserrat Alternates';
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 20px;
     font-weight: 600;
 }
@@ -75,6 +75,57 @@ header .nav__item.contact a{
 
 /* FOOTER STYLE */
 
+footer{
+    height: 30vh;
+}
+
+footer .logo{
+    margin-left: 2em;
+}
+
+footer .navbar{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+
+footer .navbar .nav__item__cont{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+
+footer .nav__item a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+footer .contact__cont{
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+footer .contact__cont p{
+    display: flex;
+    align-items: center;
+}
+
+footer .contact__cont p img{
+    width: 30px;
+    margin-right: .6em;
+}
 /* HOME PAGE STYLES*/
 .hero .main__cont{
     font-size: 300;
@@ -309,20 +360,59 @@ header .nav__item.contact a{
     font-size: 24px;
 }
 
-.contact{
+.home .contact{
     text-align: center;
     width: 90%;
-    max-height: 50vh;
+    min-height: 50vh;
     margin: 5em auto;
     background-color: var(--primary);
+    padding: 1em;
 }
 
-.contact h2{
+.home .contact h2{
     font-size: 40px;
     font-weight: 700;
 }
 
-.contact > div{
+.home .contact > div{
     display: flex;
     justify-content: space-evenly;
+}
+.home .contact .text__cont{
+    margin-top: 2em;
+    width: 50%;
+    margin-left: -2em;
+}
+
+.home .contact .text__cont .p1{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.home .contact .text__cont .p2{
+    text-align: right;
+    font-weight: 500;
+    margin-right: 4em;
+}
+.home .contact .text__cont .p3{
+    margin-top: 1em;
+    font-size: 20px;
+    font-weight: 400;
+}
+.home .contact .text__cont a{
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 250px;
+    height:60px;
+    padding-top: .5em;
+    margin-top: 2em;
+    background: var(--secondary);
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
 }
