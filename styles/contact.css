@@ -1,4 +1,6 @@
 @import url("./variables.css");
+
+/*  CONTACT PAGE STYLES  */
 .contact{
     width: 100%;
     height: auto;
@@ -6,8 +8,7 @@
 
 .contact .hero{
     width: 100%;
-    height: 90vh;
-    margin-top: -1em;
+    height: 100vh;
 }
 .contact .hero img{
     width: 100%;
@@ -115,4 +116,95 @@ form button{
 form button:hover{
     background-color: var(--secondary);
     color: white;
+}
+
+/*  ABOUT US PAGE STYLES  */
+
+.story{
+    width: 100%;
+    margin-block: 2em;
+    background-color: var(--primary);
+}
+
+.story .top__layer{
+    display: flex;
+}
+
+.top__layer .img__wrap{
+    margin-top: 2.6em;
+}
+
+.top__layer .text__wrap h2{
+    font-weight: 400;
+    margin-block: .8em;
+}
+
+.story > p{
+    width: 85%;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 1em;
+}
+
+.challenges h2, .impact h2, .mis__vis h2{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+main section {
+    padding-bottom: 3em;
+}
+section .flex__cont{
+    width: 100%;
+    height: 70vh;
+    background-color: var(--primary);
+    margin-block: 1em;
+    padding: 5em;
+    display: flex;
+    justify-content: space-between;
+}
+.flex__cont .img__cont{
+    width: 30%;
+    height: 100%;
+}
+.flex__cont .img__cont img{
+    width: 100%;
+    height: 100%;
+}
+.flex__cont .text__cont{
+    width: 50%;
+    font-size: 24px;
+    font-weight: 400;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.flex__cont .text__cont ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.first__bg{
+    background: url('../media/challengImg.svg');
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.second__bg{
+    background: url('../media/impactImg.svg');
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.third__bg{
+    background: url('../media/missEtviss.svg');
+    background-repeat: no-repeat;
+    object-fit: contain;
 }
