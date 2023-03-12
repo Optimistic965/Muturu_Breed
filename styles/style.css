@@ -284,10 +284,11 @@ footer .contact__cont p img{
     justify-content: center;
     color: white;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
-.grid__cont{
+.home .grid__cont{
     display: grid;
     grid-template-columns: repeat(30%, 3);
     grid-template-rows: 400px;
@@ -295,33 +296,33 @@ footer .contact__cont p img{
     padding: 4em;
 }
 
-.grid__item{
+.home .grid__item{
     text-align: center;
 }
 
-.grid__item h4{
+.home .grid__item h4{
     margin-top: .5em;
     font-size: 24px;
     font-weight: 400;
 }
 
-.item__1{
+.home .item__1{
     grid-column: 1 / 2;
 }
 
-.item__2{
+.home .item__2{
     grid-column: 2 / 3;
 }
 
-.item__3{
+.home .item__3{
     grid-column: 3 / 4;
 }
 
-.gallery button{
+.home .gallery button{
     margin: 2em 42%;
 }
 
-.about .text__wrap button:hover, .gallery button:hover{
+.home .about .text__wrap button:hover, .gallery button:hover{
     background-color: var(--secondary);
     color: aliceblue;
 }
@@ -331,7 +332,7 @@ footer .contact__cont p img{
     height: 50vh;
 }
 
-.team h2{
+.home .team h2{
     width: 100%;
     height: 10vh;
     display: flex;
@@ -341,7 +342,7 @@ footer .contact__cont p img{
     font-weight: 700;
 }
 
-.team .flex__cont{
+.home .team .flex__cont{
     width: 60%;
     margin: 0 auto;
     margin-top: 1em;
@@ -350,12 +351,12 @@ footer .contact__cont p img{
     text-align: center;
 }
 
-.team .flex__cont h4{
+.home .team .flex__cont h4{
     font-size: 24px;
     font-weight: 700;
 }
 
-.team .flex__cont h6{
+.home .team .flex__cont h6{
     font-weight: 400;
     font-size: 24px;
 }
