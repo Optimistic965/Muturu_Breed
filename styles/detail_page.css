@@ -39,3 +39,157 @@
     font-weight: 400;
     font-size: 24px;
 }
+
+#article_detail{
+    width: 100%;
+    height: auto;
+    margin: 1em auto;
+    background-color: #F1FEF1;
+}
+
+#article_detail section{
+    width: 90%;
+    margin: 0 auto;
+    padding-block: 2em;
+}
+
+#article_detail section .page_heading{
+    margin-bottom: 1em;
+}
+
+#article_detail section .article_title{
+    font-weight: 700;
+    font-size: 40px;
+    margin-block: .1em;
+}
+
+#article_detail .time_line{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#article_detail .time_line .date{
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+#article_detail .time_line .time{
+    padding-left: 10px;
+}
+
+#article_detail .article_content{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+#article_detail .article_content .first_layer{
+    display: flex;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: .6em;
+}
+
+#article_detail .article_content .first_layer .img_cont{
+    margin-right: 2em;
+}
+
+/* STYLES RELATED TO TEAMMATE PAGE*/
+
+#team_page .hero{
+    width: 100%;
+    min-height: 70vh;
+    /* background-color: red; */
+    text-align: center;
+}
+
+#team_page .hero .img_cont{
+    width: 500px;
+    height: 500px;
+    border: 15px solid var(--secondary);
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#team_page .hero .img_cont img{
+    width: 90%;
+    height: 90%;
+}
+
+#team_page .hero h2{
+    font-weight: 700;
+    font-size: 32px;
+    width: 20%;
+    margin: 0 auto;
+}
+
+#team_page .hero h4{
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: .2em;
+}
+
+#team_page .hero .social_links{
+    display: flex;
+    width: 20%;
+    margin: 1em auto;
+    justify-content: space-evenly;
+}
+
+#team_page #tab_cont{
+    margin-bottom: 4em;
+}
+
+#team_page #tab_cont ul.ui-widget-header{
+    background: none;
+    justify-content: center;
+}
+
+#team_page #tab_cont .cont{
+    background-color: var(--primary);
+    padding: 2em;
+}
+
+#team_page #tab_cont .cont ._article{
+    margin-block: 1em;
+}
+
+#team_page #tab_cont .cont ._article h3{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+#team_page #tab_cont .cont ._article p{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 32px;
+
+}
+
+#projects .first__lin{
+    width: 100%;
+    height: 450px;
+    margin-block: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#projects .img__cont{
+    width: 32.5%;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+#projects .img__cont div{
+    width: 100%;
+    height: 90%;
+}
+
+#projects .img__cont img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -179,16 +179,28 @@ footer .contact__cont p img{
     width: 250px;
     height: 60px;
     margin-top: 3em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.main__cont div button a{
+    width: 100%;
+    height: 100%;
     background: transparent;
     border-radius: 10px;
     border: 2px solid white;
     font-size: 24px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
-    cursor: pointer;
+    text-decoration: none;
 }
 
-.main__cont div button:hover{
+.main__cont div button a:hover{
     background-color: var(--secondary);
     color: aliceblue;
     border-color: var(--secondary);
@@ -243,18 +255,36 @@ footer .contact__cont p img{
     margin-bottom: 2em;
 }
 
-.about .text__wrap button, .gallery button{
+.about .text__wrap button, .gallery button, .project button{
     width: 250px;
     height: 60px;
     background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-bottom: 2em;
+}
+
+.about .text__wrap button a, .gallery button a, .project button a{
+    width: 100%;
+    height: 100%;
+    background: transparent;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid rgba(0, 82, 72, 1);
     font-size: 24px;
     color: black;
     font-weight: 700;
     cursor: pointer;
-    margin-left: 10%;
     margin-bottom: 2em;
+    text-decoration: none;
+}
+
+.home .about .text__wrap button a:hover, .gallery button a:hover, .project button a:hover{
+    background-color: var(--secondary);
+    color: aliceblue;
 }
 
 .about .img__wrap{
@@ -272,10 +302,10 @@ footer .contact__cont p img{
 
 .home .gallery, .home .project{
     width: 100%;
-    height: auto;
+    min-height: 50vh;
 }
 
-.gallery h2, .project h2{
+.gallery h2, .project h2, .team h2{
     width: 100%;
     height: 10vh;
     background-color: var(--secondary);
@@ -293,17 +323,20 @@ footer .contact__cont p img{
     grid-template-columns: repeat(30%, 3);
     grid-template-rows: 400px;
     gap: 5%;
+    min-height: 70%;
     padding: 4em;
 }
 
 .home .grid__item{
     text-align: center;
+    width: 100%;
 }
 
 .home .grid__item h4{
     margin-top: .5em;
     font-size: 24px;
     font-weight: 400;
+    width: 100%;
 }
 
 .home .item__1{
@@ -318,42 +351,33 @@ footer .contact__cont p img{
     grid-column: 3 / 4;
 }
 
-.home .gallery button{
-    margin: 2em 42%;
-}
-
-.home .about .text__wrap button:hover, .gallery button:hover{
-    background-color: var(--secondary);
-    color: aliceblue;
+.home .gallery button, .home .project button{
+    margin: 4em 42%;
 }
 
 .home .team{
-    margin-block: 5em;
-    height: 50vh;
-}
-
-.home .team h2{
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: 700;
+    /* margin-block: 1em; */
+    min-height: 50vh;
 }
 
 .home .team .flex__cont{
-    width: 60%;
+    width: 70%;
+    min-height: 50vh;
     margin: 0 auto;
-    margin-top: 1em;
+    margin-top: 3em;
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
+.home .team .flex__cont .flex__item{
+    width: 30%;      
+}
+
 .home .team .flex__cont h4{
     font-size: 24px;
     font-weight: 700;
+    width: 100%;
 }
 
 .home .team .flex__cont h6{
@@ -361,11 +385,33 @@ footer .contact__cont p img{
     font-size: 24px;
 }
 
+.home .team .flex__cont a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    width: 50%;
+    background: var(--secondary);
+    color: white;
+    /* height: 30px */
+    padding-block: .4em;
+    margin: .4em auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.home .team .flex__cont a:hover{
+    background-color: var(--primary);
+    color: black;
+}
+
 .home .contact{
     text-align: center;
     width: 90%;
     min-height: 50vh;
-    margin: 5em auto;
+    margin: 7em auto;
+    margin-top: 6em;
     background-color: var(--primary);
     padding: 1em;
 }
@@ -417,3 +463,12 @@ footer .contact__cont p img{
     font-weight: 700;
     cursor: pointer;
 }
+
+.home .project h4, .home .gallery h4, .home .team h4{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+} 
