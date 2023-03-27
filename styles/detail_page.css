@@ -193,3 +193,133 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* BLOG-PAGE RELATED STYLES*/
+
+#blog .hero{
+    width: 100%;
+    height: 90vh;
+    background: url('../media/blog_hero.svg') no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog .hero::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(62, 62, 62, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#blog .hero .img_cont{
+    width: 20%;
+    height: 10vh;
+    z-index: 99
+}
+
+#blog .hero .img_cont img{
+    width: 100%;
+    height: 100%;
+}
+
+#blog .blog_content{
+    width: 100%;
+    min-height: 150vh;
+    padding-block: 2em;
+}
+
+#blog .blog_content h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+#blog .blog_content .struct_wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#blog .blog_content .struct_wrapper .main_blog{
+    width: 45%;
+}
+
+#blog .blog_content .struct_wrapper aside{
+    width: 30%;
+}
+
+#blog .blog_content .struct_wrapper .main_blog .blog_item_cont{
+    width: 100%;
+    min-height: 60vh;
+    margin-block: 1em;
+}
+
+#blog .blog_content .struct_wrapper .main_blog .blog_item_cont .img_cont{
+    width: 100%;
+    height: 80%;
+}
+
+#blog .blog_content .struct_wrapper .main_blog .blog_item_cont .img_cont img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#blog .blog_content .struct_wrapper .main_blog .blog_item_cont p{
+    padding-inline: 1em;
+    font-size: 24px;
+    font-weight: 400;
+    width: 80%;
+}
+
+#blog .blog_content .struct_wrapper .main_blog .blog_item_cont span{
+    font-size: 16px;
+    padding-inline: 1em;
+}
+
+#blog .blog_content .struct_wrapper .main_blog .blog_item_cont span.first{
+    border-right: 1px solid gray;
+}
+
+#blog .blog_content .struct_wrapper aside h3{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#blog .blog_content .struct_wrapper aside .recent_blog{
+    width: 100%;
+    height: 35vh;
+    margin-block: 1em;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+#blog .blog_content .struct_wrapper aside .recent_blog .img_cont{
+    width: 50%;
+    height: 100%;
+}
+
+#blog .blog_content .struct_wrapper aside .recent_blog .img_cont img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#blog .blog_content .struct_wrapper aside .recent_blog .text_wrap{
+    width: 40%;
+    padding: 2em 1em;
+}
+
+#blog .blog_content .struct_wrapper aside .recent_blog .text_wrap h4{
+    margin-bottom: 4em;
+    font-weight: 400;
+    font-size: 20px;
+}
