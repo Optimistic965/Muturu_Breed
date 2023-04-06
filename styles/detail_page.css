@@ -277,7 +277,7 @@
     padding-inline: 1em;
     font-size: 24px;
     font-weight: 400;
-    width: 80%;
+    width: 100%;
 }
 
 #blog .blog_content .struct_wrapper .main_blog .blog_item_cont span{
@@ -314,12 +314,12 @@
 }
 
 #blog .blog_content .struct_wrapper aside .recent_blog .text_wrap{
-    width: 40%;
+    width: 50%;
     padding: 2em 1em;
 }
 
 #blog .blog_content .struct_wrapper aside .recent_blog .text_wrap h4{
-    margin-bottom: 4em;
+    margin-bottom: 1em;
     font-weight: 400;
     font-size: 20px;
 }
