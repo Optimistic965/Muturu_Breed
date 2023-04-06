@@ -134,5 +134,7 @@
 }
 
 #gallery .projects .img__cont h4, #gallery .article .article__grp .img__cont h4{
-    padding: .3em 2em;
+    text-transform: uppercase;
+    font-size: var(--ft-sm);
+    text-align: center;
 }
