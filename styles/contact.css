@@ -13,6 +13,7 @@
 .contact .hero img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .form__cont h2{
     margin: 1em 0;
@@ -59,13 +60,13 @@ form{
 
 .form__item__cont .form__1 input{
     width: 100%;
-    height: 60%;
-    margin-top: 2em;
+    height: 80%;
+    margin-top: 1em;
     border: 1px solid var(--secondary);
     border-radius: 8px;
-    padding-inline: 2em;
+    padding-inline: 1.3em;
     color: black;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 .form__item__cont .form__1 input:focus{
