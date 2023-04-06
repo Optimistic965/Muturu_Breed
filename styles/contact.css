@@ -163,7 +163,7 @@ main section {
 }
 section .flex__cont{
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     background-color: var(--primary);
     margin-block: 1em;
     padding: 5em;
@@ -171,12 +171,13 @@ section .flex__cont{
     justify-content: space-between;
 }
 .flex__cont .img__cont{
-    width: 30%;
+    width: 35%;
     height: 100%;
 }
 .flex__cont .img__cont img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .flex__cont .text__cont{
     width: 50%;
@@ -193,18 +194,12 @@ section .flex__cont{
     flex-direction: column;
     justify-content: space-between;
 }
-.first__bg{
-    background: url('../media/challengImg.svg');
-    background-repeat: no-repeat;
-    object-fit: contain;
+.mis__vis ul h3 {
+    text-align: center;
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: .5em;
 }
-.second__bg{
-    background: url('../media/impactImg.svg');
-    background-repeat: no-repeat;
-    object-fit: contain;
-}
-.third__bg{
-    background: url('../media/missEtviss.svg');
-    background-repeat: no-repeat;
-    object-fit: contain;
+.mis__vis .vision{
+    margin-top: 15vh;
 }

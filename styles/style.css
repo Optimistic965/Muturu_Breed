@@ -85,9 +85,10 @@ footer .logo{
 }
 
 footer .navbar{
-    width: 40%;
+    width: 30%;
     height: 100%;
-    text-align: center;
+    margin-left: 25%;
+    /* text-align: center; */
 }
 
 footer .navbar .nav__item__cont{
