@@ -10,7 +10,6 @@ function changeBg(){
 }
 
 $(document).ready(function(){
-    document.body.style.zoom = "90%"
     console.log('document is ready')
     $('#team_page #tab_cont').tabs()
     // setInterval(changeBg(), 3000)

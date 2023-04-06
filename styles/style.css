@@ -4,7 +4,7 @@
 header, footer{
     background-color: var(--primary);
     width: 100%;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,6 @@ header, footer{
 header div{
     width: 10%;
     height: 100%;
-    /* background-color: yellow; */
 }
 
 header div img{
@@ -24,13 +23,13 @@ header div img{
 }
 
 nav{
-    width: 50%;
+    width: 55%;
     height: 100%;
     display: flex;
     align-items: center;
-    padding-inline: 1em;
+    padding-right: 1em;
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 20px;
+    font-size: var(--ft-sm);
     font-weight: 600;
 }
 
@@ -39,23 +38,25 @@ header .nav__item__cont{
     width: 100%;
     height: 60%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 header .nav__item{
-    width: 16%;
+    width: 18%;
     height: 100%;
 }
 
 header .nav__item a{
     justify-content: center;
     display: flex;
-    padding-top: .5em;
     text-decoration: none;
     width: 100%;
     color: black;
     height: 100%;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 
 header .nav__item a:hover{
@@ -80,7 +81,7 @@ footer{
 }
 
 footer .logo{
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 footer .navbar{
@@ -124,7 +125,7 @@ footer .contact__cont p{
 
 footer .contact__cont p img{
     width: 30px;
-    margin-right: .6em;
+    margin-right: .3em;
 }
 /* HOME PAGE STYLES*/
 .hero .main__cont{
@@ -136,7 +137,7 @@ footer .contact__cont p img{
     background-size: cover;
     background-position: center;
     position: relative;
-    padding-block: 15vh;
+    padding-block: 10vh;
 }
 
 /* .main__cont::after{
@@ -191,7 +192,7 @@ footer .contact__cont p img{
     background: transparent;
     border-radius: 10px;
     border: 2px solid white;
-    font-size: 24px;
+    font-size: var(--ft);
     color: white;
     display: flex;
     justify-content: center;
@@ -206,13 +207,13 @@ footer .contact__cont p img{
     border-color: var(--secondary);
 }
 
-.logo__cont{
+#logo__cont{
     width: 100%;
     height: 10vh;
     background-color: var(--bg-color);
 }
 
-.logo__cont .logo__wrap{
+#logo__cont .logo__wrap{
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -228,12 +229,12 @@ footer .contact__cont p img{
     height: auto;
     margin-block: 8vh;
     background-color: var(--bg-color);
-    padding: 5em;
+    padding: 4em;
 }
 
 .about h2{
     text-align: center;
-    font-size: 40px;
+    font-size: var(--ft-lg);
     font-weight: 700;
     margin-bottom: 1.5em;
 }
@@ -246,7 +247,7 @@ footer .contact__cont p img{
     padding-inline: 1em;
     width: 65%;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--ft);
 }
 
 .about .text__wrap p{
@@ -274,7 +275,7 @@ footer .contact__cont p img{
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(0, 82, 72, 1);
-    font-size: 24px;
+    font-size: var(--ft);
     color: black;
     font-weight: 700;
     cursor: pointer;
@@ -289,7 +290,6 @@ footer .contact__cont p img{
 
 .about .img__wrap{
     padding-top: 1.5em;
-    /* background-color: red; */
     position: relative;
 }
 
@@ -313,18 +313,19 @@ footer .contact__cont p img{
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 40px;
+    font-size: var(--ft-lg);
     font-weight: 500;
     text-transform: uppercase;
 }
 
 .home .grid__cont{
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(30%, 3);
     grid-template-rows: 400px;
-    gap: 5%;
+    gap: calc(10% / 3);
     min-height: 70%;
-    padding: 4em;
+    padding: 4em 1em;
 }
 
 .home .grid__item{
@@ -334,13 +335,25 @@ footer .contact__cont p img{
 
 .home .grid__item h4{
     margin-top: .5em;
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 400;
     width: 100%;
 }
 
+.home .grid__item .img__cont{
+    height: 100%;
+    width: 100%;
+}
+
+.home .grid__item .img__cont img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .home .item__1{
     grid-column: 1 / 2;
+    background-color: pink;
 }
 
 .home .item__2{
@@ -352,7 +365,8 @@ footer .contact__cont p img{
 }
 
 .home .gallery button, .home .project button{
-    margin: 4em 42%;
+    margin: 4em;
+    margin-left: 42%;
 }
 
 .home .team{
@@ -375,14 +389,14 @@ footer .contact__cont p img{
 }
 
 .home .team .flex__cont h4{
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 700;
     width: 100%;
 }
 
 .home .team .flex__cont h6{
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--ft);
 }
 
 .home .team .flex__cont a{
@@ -417,7 +431,7 @@ footer .contact__cont p img{
 }
 
 .home .contact h2{
-    font-size: 40px;
+    font-size: var(--ft-lg);
     font-weight: 700;
 }
 
@@ -432,7 +446,7 @@ footer .contact__cont p img{
 }
 
 .home .contact .text__cont .p1{
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 500;
     text-align: left;
 }
@@ -444,7 +458,7 @@ footer .contact__cont p img{
 }
 .home .contact .text__cont .p3{
     margin-top: 1em;
-    font-size: 20px;
+    font-size: var(--ft-sm);
     font-weight: 400;
 }
 .home .contact .text__cont a{
@@ -458,17 +472,17 @@ footer .contact__cont p img{
     background: var(--secondary);
     border-radius: 10px;
     border: 2px solid white;
-    font-size: 24px;
+    font-size: var(--ft);
     color: white;
     font-weight: 700;
     cursor: pointer;
 }
 
 .home .project h4, .home .gallery h4, .home .team h4{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 1em;
     text-align: center;
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 400;
 } 
