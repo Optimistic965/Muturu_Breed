@@ -42,23 +42,23 @@
                     <div class="form__1">
                         <div>
                             <label for="name">NAME</label>
-                            <input type="text" id="name" name="Name">
+                            <input type="text" id="name" name="Name" required>
                         </div>
                         <div>
                             <label for="mail">EMAIL</label>
-                            <input type="email" id="mail" name="email">
+                            <input type="email" id="mail" name="Email" required>
                         </div>
                         <div>
                             <label for="phNum">PHONE NUMBER</label>
-                            <input type="tel" id="phNum" name="Phone Number">
+                            <input type="tel" id="phNum" name="Phone Number" required>
                         </div>
                     </div>
                     <div class="form__2">
                         <label for="msg">SEND US A MESSAGE</label>
-                        <textarea name="message" id="msg" cols="30" rows="10" placeholder="Write something...."></textarea>
+                        <textarea name="Message" id="msg" cols="30" rows="10" placeholder="Write something...." required></textarea>
                     </div>
                 </div>
-                <button type="submit">Send Message</button>
+                <button id="submit" type="submit">Send Message</button>
             </form>
         </section>
     </main>
