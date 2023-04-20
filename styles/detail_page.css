@@ -23,7 +23,7 @@
 
 #project_detail .hero_sec h2{
     text-align: center;
-    font-size: 32px;
+    font-size: var(--ft-md-s);
     font-weight: 700;
     margin-top: 1em;
 }
@@ -37,7 +37,7 @@
     margin: 2.4em auto;
     text-align: justify;
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--ft);
 }
 
 #article_detail{
@@ -59,12 +59,12 @@
 
 #article_detail section .article_title{
     font-weight: 700;
-    font-size: 40px;
+    font-size: var(--ft-lg);
     margin-block: .1em;
 }
 
 #article_detail .time_line{
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 400;
 }
 
@@ -78,14 +78,14 @@
 }
 
 #article_detail .article_content{
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 400;
     line-height: 33px;
 }
 
 #article_detail .article_content .first_layer{
     display: flex;
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 400;
     margin-bottom: .6em;
 }
@@ -121,14 +121,14 @@
 
 #team_page .hero h2{
     font-weight: 700;
-    font-size: 32px;
+    font-size: var(--ft-md-s);
     width: 20%;
     margin: 0 auto;
 }
 
 #team_page .hero h4{
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--ft);
     margin-top: .2em;
 }
 
@@ -159,13 +159,13 @@
 
 #team_page #tab_cont .cont ._article h3{
     font-weight: 600;
-    font-size: 32px;
+    font-size: var(--ft-md-s);
 }
 
 #team_page #tab_cont .cont ._article p{
     font-weight: 400;
     font-style: italic;
-    font-size: 32px;
+    font-size: var(--ft-md-s);
 
 }
 
@@ -236,7 +236,7 @@
 
 #blog .blog_content h2{
     text-align: center;
-    font-size: 32px;
+    font-size: var(--ft-md-s);
     font-weight: 500;
     margin-bottom: 1em;
 }
@@ -275,13 +275,13 @@
 
 #blog .blog_content .struct_wrapper .main_blog .blog_item_cont p{
     padding-inline: 1em;
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 400;
     width: 100%;
 }
 
 #blog .blog_content .struct_wrapper .main_blog .blog_item_cont span{
-    font-size: 16px;
+    font-size: var(--ft-xsm);
     padding-inline: 1em;
 }
 
@@ -290,7 +290,7 @@
 }
 
 #blog .blog_content .struct_wrapper aside h3{
-    font-size: 32px;
+    font-size: var(--ft-md-s);
     font-weight: 500;
 }
 
@@ -321,5 +321,8 @@
 #blog .blog_content .struct_wrapper aside .recent_blog .text_wrap h4{
     margin-bottom: 1em;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--ft-sm);
 }
+
+@media screen and (max-width: 890px) {}
+@media screen and (max-width: 600px) {}

@@ -43,7 +43,7 @@ header .nav__item__cont{
 }
 
 header .nav__item{
-    width: 18%;
+    min-width: 18%;
     height: 100%;
 }
 
@@ -103,7 +103,7 @@ footer .navbar .nav__item__cont{
 footer .nav__item a{
     text-decoration: none;
     color: black;
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 400;
     font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -114,7 +114,7 @@ footer .contact__cont{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 400;
     font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -358,7 +358,7 @@ footer .contact__cont p img{
 
 .home .gallery button, .home .project button{
     margin: 4em;
-    margin-left: 42%;
+    margin-left: calc((100% - 250px)/2);
 }
 
 .home .team{
@@ -367,7 +367,7 @@ footer .contact__cont p img{
 }
 
 .home .team .flex__cont{
-    width: 70%;
+    width: 90%;
     min-height: 50vh;
     margin: 0 auto;
     margin-top: 3em;
@@ -377,9 +377,20 @@ footer .contact__cont p img{
 }
 
 .home .team .flex__cont .flex__item{
-    width: 30%;      
+    width: 30%;
+    margin-inline: 3%;   
 }
 
+.home .team .flex__cont .img__cont{
+    width: 100%;
+    height: 60%;
+}
+
+.home .team .flex__cont .flex__item .img__cont img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .home .team .flex__cont h4{
     font-size: var(--ft);
     font-weight: 700;
@@ -394,7 +405,7 @@ footer .contact__cont p img{
 .home .team .flex__cont a{
     display: block;
     text-decoration: none;
-    font-size: 16px;
+    font-size: var(--ft-xsm);
     color: black;
     font-weight: 500;
     width: 50%;
@@ -470,11 +481,89 @@ footer .contact__cont p img{
     cursor: pointer;
 }
 
-.home .project h4, .home .gallery h4, .home .team h4{
+.home .project>h4, .home .gallery>h4, .home .team>h4{
     width: 70%;
     margin: 0 auto;
     margin-top: 1em;
     text-align: center;
     font-size: var(--ft);
     font-weight: 400;
-} 
+}
+
+@media screen and (max-width: 890px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    nav{
+        position: absolute;
+        right: -10000px;
+    }
+    .main__cont div{
+        width: 90%;
+    }
+
+    .home .about>div{
+        flex-direction: column;
+    }
+
+    .home .about .text__wrap{
+        width: 100%;
+        padding: 0;
+    }
+
+    .home .about .img__wrap{
+        position: absolute;
+        right: -10000px;
+    }
+
+    .home .project h4, .home .gallery h4, .home .team h4{
+        width: 100%;
+    }
+
+    .home .team .flex__cont{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home .team .flex__cont .flex__item{
+        width: 60%;
+        margin-bottom: 1em;
+    }
+
+    .home .contact .content .img__cont{
+        position: absolute;
+        left: -10000px;
+    }
+
+    .home .contact .content .text__cont{
+        width: 100%;
+    }
+
+    .home .contact .content .text__cont .p1{
+        padding-left: 1em;
+    }
+
+    .home .team .flex__cont .img__cont{
+        width: 50%;
+        margin: 0 auto;
+    }
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+    footer .contact__cont{
+        position: absolute;
+        right: -10000px;
+    }
+    .about .text__wrap{
+        padding-inline: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main__cont div{
+        width: 100%;
+    }
+}

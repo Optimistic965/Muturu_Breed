@@ -88,7 +88,7 @@
 
 #gallery .projects .first__lin, #gallery .projects .second__lin{
     width: 100%;
-    height: 450px;
+    min-height: 450px;
     margin-block: 2em;
     display: flex;
     justify-content: space-between;
@@ -137,4 +137,24 @@
     text-transform: uppercase;
     font-size: var(--ft-sm);
     text-align: center;
+}
+
+@media screen and (max-width: 790px) {
+    #gallery .hero div{
+        font-size: 40px;
+        /* left: calc((100% - 237)/2); */
+    }
+
+    #gallery .projects .first__lin, #gallery .projects .second__lin{
+        flex-direction: column;
+    }
+
+    #gallery .projects .first__lin .img__cont, #gallery .projects .second__lin .img__cont{
+        width: 100%;
+    }
+
+    .gallery .article .article__grp{
+        display: flex;
+        flex-direction: column;
+    }
 }

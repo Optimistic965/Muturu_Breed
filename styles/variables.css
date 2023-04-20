@@ -7,6 +7,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    width: 100vw;
+}
+
 :root{
             /* COLOR PALETTE*/
     --primary: rgba(77, 245, 84, 0.2);
@@ -20,9 +24,11 @@
 
 
             /* FONT SIZES*/
-    --ft-sm: 20px;
-    --ft: 24px;
-    --ft-md: 36px;
-    --ft-lg: 40px;
-    --ft-xlg: 48px;
+    --ft-xsm: 1em;
+    --ft-sm: 1.25em;
+    --ft: 1.5em;
+    --ft-md-s: 2em;
+    --ft-md: 2.25em;
+    --ft-lg: 2.5em;
+    --ft-xlg: 3em;
 }

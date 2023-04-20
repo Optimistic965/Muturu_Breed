@@ -18,7 +18,7 @@
 .form__cont h2{
     margin: 1em 0;
     text-align: center;
-    font-size: 40px;
+    font-size: var(--ft-lg);
     font-weight: 700;
 }
 
@@ -26,7 +26,7 @@
     text-align: center;
     width: 50%;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 400;
 }
 
@@ -82,7 +82,7 @@ form{
 
 .form__item__cont .form__2 label, .form__item__cont .form__1 label{
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 600;
     cursor: pointer;
 }
@@ -107,7 +107,7 @@ form button{
     height: 60px;
     border-radius: 8px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: var(--ft-sm);
     font-weight: 400;
     cursor: pointer;
     border: 2px solid var(--secondary);
@@ -143,7 +143,7 @@ form button:hover{
 .story > p{
     width: 85%;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 400;
     padding-bottom: 1em;
 }
@@ -156,7 +156,7 @@ form button:hover{
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 40px;
+    font-size: var(--ft-lg);
     font-weight: 700;
 }
 main section {
@@ -182,7 +182,7 @@ section .flex__cont{
 }
 .flex__cont .text__cont{
     width: 50%;
-    font-size: 24px;
+    font-size: var(--ft);
     font-weight: 400;
     height: 100%;
     display: flex;
@@ -195,7 +195,7 @@ section .flex__cont{
     flex-direction: column;
     justify-content: space-between;
 }
-.mis__vis ul h3 {
+.mis__vis ul h3{
     text-align: center;
     color: var(--secondary);
     font-weight: 600;
@@ -203,4 +203,38 @@ section .flex__cont{
 }
 .mis__vis .vision{
     margin-top: 15vh;
+}
+
+@media screen and (max-width: 890px) {
+    .story .top__layer{
+        flex-direction: column;
+    }
+    .story .top__layer .img__wrap{
+        display: absolute;
+        right: -10000px;
+    }
+    .about .text__wrap{
+        width: 100%;
+        height: auto;
+    }
+    .about .text__wrap p{
+        width: 85%;
+        margin-bottom: 0;
+    }
+    section .flex__cont{
+        padding: 2em;
+    }
+    .flex__cont{
+        flex-direction: column;
+    }
+    .flex__cont .img__cont{
+        position: absolute;
+        right: -100000px;
+    }
+    .flex__cont .text__cont{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+
 }
