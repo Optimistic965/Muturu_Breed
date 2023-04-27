@@ -25,6 +25,11 @@
                 <li class="nav__item"><a href="./blog.html">Blog</a></li>
                 <li class="nav__item contact"><a href="#contact">Contact Us</a></li>
             </ul>
+            <div class="burger_cont">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <main id="contact" class="contact">
@@ -61,6 +66,13 @@
                 <button id="submit" type="submit">Send Message</button>
             </form>
         </section>
+        <section class="modal">
+            <div class="modal_content">
+                <p>Thank you for reaching out to us regarding our projects. We appreciate your interest and would be happy to provide you with more information. Our team is currently reviewing your inquiry and will get back to you as soon as possible with more details.</p>
+                <p>If you have any other questions or concerns in the meantime, please feel free to let us know. We look forward to the opportunity to work with you.</p>
+                <button class="close_modal">Done</button>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="logo">
@@ -90,5 +102,54 @@
     </footer>
 
     <script src="../script/index.js"></script>
+    <script>
+        // Getting element with field by ID
+        const uName = document.getElementById('name')
+        const mail = document.getElementById('mail')
+        const phNum = document.getElementById('phNum')
+        const msg = document.getElementById('msg')
+        const closeModal = document.querySelector('.close_modal')
+        const modal = document.querySelector('.modal')
+        // Submit button selector
+        const submit = document.getElementById('submit')
+        // Validate FormFields
+        // Just making sure it's not empty
+        function validate(){
+            if(uName.value.length < 1 || mail.value.length < 1 || phNum.value.length < 1 || msg.value.length < 1){
+                return false
+            } else {
+                return true
+            }
+        }
+
+        function clearField() {
+            uName.value = ''
+            mail.value = ''
+            phNum.value = ''
+            msg.value = ''
+        }
+
+        function handleSumbit(e) {
+            e.preventDefault()
+            const valid = validate()
+            // Creating an object to be submitted 
+            const data = {}
+            if(valid){
+                data['Name'] = uName.value
+                data['Mail'] = mail.value
+                data['Phone Number'] = phNum.value
+                data['Message'] = msg.value
+                clearField()
+                modal.classList.add('active')
+            } else {
+                alert('field can\'t be empty')
+            }
+        }
+        // Submit Event listener
+        submit.addEventListener('click', handleSumbit)
+        closeModal.addEventListener('click', () => {
+            modal.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>

@@ -324,5 +324,21 @@
     font-size: var(--ft-sm);
 }
 
-@media screen and (max-width: 890px) {}
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 1024px) {
+    #blog .blog_content .struct_wrapper{
+        flex-direction: column;
+    }
+    #blog .blog_content .struct_wrapper .main_blog, #blog .blog_content .struct_wrapper aside{
+        width: 100%;
+    }
+    #blog .blog_content .struct_wrapper aside h3{
+        text-align: center;
+    }
+    #team_page .hero .img_cont{
+        width: 300px;
+        height: 300px;
+    }
+    #team_page .hero h2{
+        width: 80%;
+    }
+}

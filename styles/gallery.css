@@ -142,7 +142,7 @@
 @media screen and (max-width: 790px) {
     #gallery .hero div{
         font-size: 40px;
-        /* left: calc((100% - 237)/2); */
+        left: calc((100vw - 237px)/2);
     }
 
     #gallery .projects .first__lin, #gallery .projects .second__lin{
@@ -153,7 +153,7 @@
         width: 100%;
     }
 
-    .gallery .article .article__grp{
+    #gallery .article .article__grp{
         display: flex;
         flex-direction: column;
     }

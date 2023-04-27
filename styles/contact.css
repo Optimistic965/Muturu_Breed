@@ -1,16 +1,17 @@
 @import url("./variables.css");
 
 /*  CONTACT PAGE STYLES  */
-.contact{
-    width: 100%;
+#contact{
+    width: 100vw;
     height: auto;
+    overflow-x: hidden;
 }
 
-.contact .hero{
+#contact .hero{
     width: 100%;
     height: 100vh;
 }
-.contact .hero img{
+#contact .hero img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -32,13 +33,13 @@
 
 form{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 2em;
     padding-inline: 2em;
 }
 
 .form__item__cont{
-    height: 60vh;
+    height: 60%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 2em;
@@ -56,15 +57,16 @@ form{
     display: flex;
     height: 25%;
     flex-direction: column;
+    margin-bottom: 2em;
 }
 
 .form__item__cont .form__1 input{
     width: 100%;
-    height: 80%;
+    /* height: 80%; */
     margin-top: 1em;
     border: 1px solid var(--secondary);
     border-radius: 8px;
-    padding-inline: 1.3em;
+    padding: .5em 1.3em;
     color: black;
     font-size: 1.3em;
 }
@@ -119,6 +121,46 @@ form button:hover{
     color: white;
 }
 
+.modal{
+    display: none;
+}
+.modal.active{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-color: rgba(128, 128, 128, 0.827);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.modal_content{
+    width: 40%;
+    height: auto;
+    margin-block: calc((100vh - 40vh)/2);
+    margin-inline: calc((100vw - 40vw)/2);
+    background-color: rgb(166, 237, 185);
+    border-radius: 2em;
+    padding: 2em;
+}
+.modal_content p{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: var(--ft-xsm);
+}
+
+.modal_content button{
+    width: 180px;
+    margin-top: 2em;
+    padding: .5em 2em;
+    margin-left: calc((100% - 180px)/2);
+    border-radius: 1em;
+    background-color: var(--secondary);
+    color: white;
+    font-size: var(--ft-xsm);
+    border: none;
+    cursor: pointer;
+}
 /*  ABOUT US PAGE STYLES  */
 
 .story{
@@ -205,7 +247,7 @@ section .flex__cont{
     margin-top: 15vh;
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1024px) {
     .story .top__layer{
         flex-direction: column;
     }
@@ -234,7 +276,29 @@ section .flex__cont{
     .flex__cont .text__cont{
         width: 100%;
     }
+    .contact .form__cont p{
+        width: 100%;
+        text-align: left;
+        padding-inline: 1em;
+    }
+    .contact .form__item__cont{
+        flex-direction: column;
+    }
+    .form__item__cont .form__1, .form__item__cont .form__2{
+        width: 100%;
+    }
+    .form__item__cont .form__1{
+        margin-bottom: 2em;
+    }
+    .modal_content{
+        width: 60%;
+        margin-left: calc((100vw - 60%)/2);
+    }
 }
-@media screen and (max-width: 600px) {
 
+@media screen and (max-width: 760px) {
+    .modal_content{
+        width: 80%;
+        margin-left: calc((100vw - 80%)/2);
+    }
 }
